@@ -1,0 +1,13 @@
+<?php 
+	$form = $this->form;
+	$form->prepare();
+	echo $this->form()->openTag($form);
+?>
+
+<?php echo $this->formElement($form->get('note')); ?>
+<?php echo $this->formElementErrors($form->get('note')); ?>
+<?php echo '<span class="count-message pull-right"></span>'; ?>
+<?php echo $this->formElement($form->get('write')); ?>
+<?php echo $this->formElement($form->get('csrf')); ?>
+
+<?php echo $this->form()->closeTag(); ?>

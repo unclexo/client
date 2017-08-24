@@ -1,0 +1,29 @@
+<?php 
+$form = $this->form;
+$form->prepare();
+echo $this->form()->openTag($form); ?> 
+
+<div class="control-group">
+	<?php echo $this->formLabel($form->get('username')); ?>
+	<div class="controls">
+		<?php echo $this->formElement($form->get('username')); ?>
+		<?php echo $this->formElementErrors($form->get('username')); ?>
+	</div>
+</div>
+
+<div class="control-group">
+	<?php echo $this->formLabel($form->get('password')); ?>
+	<div class="controls">
+		<?php echo $this->formElement($form->get('password')); ?>
+		<?php echo $this->formElementErrors($form->get('password')); ?>
+	</div>
+</div>
+
+<div class="control-group">
+	<div class="controls">
+		<?php echo $this->formElement($form->get('login')); ?>
+		<?php echo $this->formElement($form->get('csrf')); ?>
+	</div>
+</div>
+
+<?php echo $this->form()->closeTag(); ?>

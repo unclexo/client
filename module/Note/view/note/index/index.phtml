@@ -1,0 +1,68 @@
+<?php if ($isMyNote): ?>
+<div class="col-md-12">
+    <section>
+        <div class="note-form">
+            <?php echo $this->partial('forms/note', array('form' => $noteForm)); ?>
+        </div>        
+    </section>
+</div>
+<?php endif; ?>
+
+<script type="text/javascript">
+	var text_max = 1000;
+	$('.count-message').html(text_max + ' remaining');
+	$('.note').keyup(function() {
+	  var text_length = $('.note').val().length;
+	  var text_remaining = text_max - text_length;
+	  $('.count-message').html(text_remaining + ' remaining');
+	});	
+</script>
+
+<div class="col-sm-12">
+    <?php if ($notes) : ?>
+    <?php foreach ($notes as $note): ?>
+        <section>
+            <div class="note panel panel-white panel-shadow">
+                <div class="note-heading">
+
+                    <div class="note-avatar pull-left">
+                        <?php if ($user->getFilename()) : ?>
+                            <img src="<?php echo $user->getAvatarUrl(); ?>" class="img-circle avatar" alt="<?php echo $user->getUsername(); ?> profile image">
+                        <?php else: ?>
+                            <img src="/img/default.png" class="img-circle avatar" alt="<?php echo $user->getUsername(); ?> profile image">
+                        <?php endif; ?>
+                    </div>
+
+                    <div class="note-meta pull-left">
+                        <div class="title h5">
+                            <a href="/<?php echo $user->getUsername(); ?>"><b><?php echo $user->getUsername(); ?></b></a>
+                        </div>
+                        <?php if ($user->getLocation()) : ?>
+                            <h6 class="text-muted time"><?php echo $this->translate('from'), ' ', $user->getLocation(); ?></h6>
+                        <?php endif; ?>
+                    </div>
+
+                    <div class="note-meta pull-right">
+                        <div class="title h5">
+                            <div class="dropdown">
+                                <span class="btn btn-default dropdown-toggle" id="actionMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    action
+                                </span>
+                                <ul class="dropdown-menu" aria-labelledby="actionMenu">
+                                    <li><a href="#">Delete</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>                    
+                </div> 
+                <div class="note-description"> 
+                    <p><?php echo nl2br($this->escapeHtml($note->getNote())); ?></p>
+                </div>
+            </div>           
+        </section>
+    <?php endforeach; ?>
+        <section>
+            <?php echo $this->paginationControl($notes, 'Sliding', 'paginator/default', array('route' => 'note', 'routeParams' => array('username' => $user->getUsername()))); ?>
+        </section>
+    <?php endif; ?>
+</div>

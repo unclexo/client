@@ -1,0 +1,223 @@
+2017-08-18T13:13:09+02:00 DEBUG (7): {"errorCode":400,"errorMessage":"Bad Request"}
+2017-08-18T13:13:16+02:00 DEBUG (7): {"errorCode":400,"errorMessage":"Bad Request"}
+2017-08-18T13:14:26+02:00 DEBUG (7): {"errorCode":400,"errorMessage":"Bad Request"}
+2017-08-18T13:14:34+02:00 DEBUG (7): {"errorCode":400,"errorMessage":"Bad Request"}
+2017-08-18T13:26:01+02:00 DEBUG (7): {"errorCode":400,"errorMessage":"Bad Request"}
+2017-08-18T13:27:02+02:00 DEBUG (7): {"errorCode":400,"errorMessage":"Bad Request"}
+2017-08-18T13:27:15+02:00 DEBUG (7): {"errorCode":400,"errorMessage":"Bad Request"}
+2017-08-18T13:27:26+02:00 DEBUG (7): {"errorCode":400,"errorMessage":"Bad Request"}
+2017-08-20T09:48:47+02:00 DEBUG (7): <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Access forbidden!</title>
+<link rev="made" href="mailto:webmaster@dummy-host.example.com" />
+<style type="text/css"><!--/*--><![CDATA[/*><!--*/ 
+    body { color: #000000; background-color: #FFFFFF; }
+    a:link { color: #0000CC; }
+    p, address {margin-left: 3em;}
+    span {font-size: smaller;}
+/*]]>*/--></style>
+</head>
+
+<body>
+<h1>Access forbidden!</h1>
+<p>
+
+
+  
+
+    You don't have permission to access the requested object.
+    It is either read-protected or not readable by the server.
+
+  
+
+</p>
+<p>
+If you think this is a server error, please contact
+the <a href="mailto:webmaster@dummy-host.example.com">webmaster</a>.
+
+</p>
+
+<h2>Error 403</h2>
+<address>
+  <a href="/">xoserver.dev</a><br />
+  <span>Apache/2.4.23 (Unix) OpenSSL/1.0.2j PHP/7.0.9 mod_perl/2.0.8-dev Perl/v5.16.3</span>
+</address>
+</body>
+</html>
+
+
+2017-08-20T09:48:57+02:00 DEBUG (7): <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Access forbidden!</title>
+<link rev="made" href="mailto:webmaster@dummy-host.example.com" />
+<style type="text/css"><!--/*--><![CDATA[/*><!--*/ 
+    body { color: #000000; background-color: #FFFFFF; }
+    a:link { color: #0000CC; }
+    p, address {margin-left: 3em;}
+    span {font-size: smaller;}
+/*]]>*/--></style>
+</head>
+
+<body>
+<h1>Access forbidden!</h1>
+<p>
+
+
+  
+
+    You don't have permission to access the requested object.
+    It is either read-protected or not readable by the server.
+
+  
+
+</p>
+<p>
+If you think this is a server error, please contact
+the <a href="mailto:webmaster@dummy-host.example.com">webmaster</a>.
+
+</p>
+
+<h2>Error 403</h2>
+<address>
+  <a href="/">xoserver.dev</a><br />
+  <span>Apache/2.4.23 (Unix) OpenSSL/1.0.2j PHP/7.0.9 mod_perl/2.0.8-dev Perl/v5.16.3</span>
+</address>
+</body>
+</html>
+
+
+2017-08-20T09:49:10+02:00 DEBUG (7): <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Access forbidden!</title>
+<link rev="made" href="mailto:webmaster@dummy-host.example.com" />
+<style type="text/css"><!--/*--><![CDATA[/*><!--*/ 
+    body { color: #000000; background-color: #FFFFFF; }
+    a:link { color: #0000CC; }
+    p, address {margin-left: 3em;}
+    span {font-size: smaller;}
+/*]]>*/--></style>
+</head>
+
+<body>
+<h1>Access forbidden!</h1>
+<p>
+
+
+  
+
+    You don't have permission to access the requested object.
+    It is either read-protected or not readable by the server.
+
+  
+
+</p>
+<p>
+If you think this is a server error, please contact
+the <a href="mailto:webmaster@dummy-host.example.com">webmaster</a>.
+
+</p>
+
+<h2>Error 403</h2>
+<address>
+  <a href="/">xoserver.dev</a><br />
+  <span>Apache/2.4.23 (Unix) OpenSSL/1.0.2j PHP/7.0.9 mod_perl/2.0.8-dev Perl/v5.16.3</span>
+</address>
+</body>
+</html>
+
+
+2017-08-20T09:51:34+02:00 DEBUG (7): <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Access forbidden!</title>
+<link rev="made" href="mailto:webmaster@dummy-host.example.com" />
+<style type="text/css"><!--/*--><![CDATA[/*><!--*/ 
+    body { color: #000000; background-color: #FFFFFF; }
+    a:link { color: #0000CC; }
+    p, address {margin-left: 3em;}
+    span {font-size: smaller;}
+/*]]>*/--></style>
+</head>
+
+<body>
+<h1>Access forbidden!</h1>
+<p>
+
+
+  
+
+    You don't have permission to access the requested object.
+    It is either read-protected or not readable by the server.
+
+  
+
+</p>
+<p>
+If you think this is a server error, please contact
+the <a href="mailto:webmaster@dummy-host.example.com">webmaster</a>.
+
+</p>
+
+<h2>Error 403</h2>
+<address>
+  <a href="/">xoserver.dev</a><br />
+  <span>Apache/2.4.23 (Unix) OpenSSL/1.0.2j PHP/7.0.9 mod_perl/2.0.8-dev Perl/v5.16.3</span>
+</address>
+</body>
+</html>
+
+
+2017-08-20T09:53:10+02:00 DEBUG (7): <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Access forbidden!</title>
+<link rev="made" href="mailto:webmaster@dummy-host.example.com" />
+<style type="text/css"><!--/*--><![CDATA[/*><!--*/ 
+    body { color: #000000; background-color: #FFFFFF; }
+    a:link { color: #0000CC; }
+    p, address {margin-left: 3em;}
+    span {font-size: smaller;}
+/*]]>*/--></style>
+</head>
+
+<body>
+<h1>Access forbidden!</h1>
+<p>
+
+
+  
+
+    You don't have permission to access the requested object.
+    It is either read-protected or not readable by the server.
+
+  
+
+</p>
+<p>
+If you think this is a server error, please contact
+the <a href="mailto:webmaster@dummy-host.example.com">webmaster</a>.
+
+</p>
+
+<h2>Error 403</h2>
+<address>
+  <a href="/">xoserver.dev</a><br />
+  <span>Apache/2.4.23 (Unix) OpenSSL/1.0.2j PHP/7.0.9 mod_perl/2.0.8-dev Perl/v5.16.3</span>
+</address>
+</body>
+</html>
+
+

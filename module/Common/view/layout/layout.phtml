@@ -1,0 +1,85 @@
+<?php echo $this->doctype(); ?>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('Note - ' . $this->translate('Lets note each and every Moment of our life'))->setSeparator(' - ')->setAutoEscape(false); ?>
+        <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0'); ?>
+
+        <!-- Styles -->
+        <?php echo $this->headLink(['rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'])
+            ->prependStylesheet($this->basePath() . '/css/style.css')
+            ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css'); ?>
+
+        <!-- Scripts -->
+        <?php echo $this->headScript()->prependFile($this->basePath() . '/js/html5shiv.js', 'text/javascript', ['conditional' => 'lt IE 9'])
+            ->prependFile($this->basePath() . '/js/bootstrap.min.js')
+            ->prependFile($this->basePath() . '/js/jquery.min.js'); ?>  
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="col-md-12">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="/"><?php echo $this->translate('Note'); ?></a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="main-menu">
+                                <?php if ($this->loggedInUser !== null) : ?>
+                                    <?php $this->navigation('navigation')->findBy('route', 'note')->setParams(array('username' => $this->loggedInUser->getUsername())); ?>
+                                <?php endif; ?>
+
+                                <?php 
+                                    echo $this->navigation('navigation')
+                                        ->menu()
+                                        ->setUlClass('nav navbar-nav navbar-right')
+                                        ->setAcl($this->acl)
+                                        ->setRole($this->userRole)
+                                        ->renderMenu(); 
+                                ?>                  
+                            </div><!-- /.navbar-collapse -->
+                        </div>    
+                    </div>
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </nav>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="col-md-12">
+                            <?php $flash = $this->flashMessenger()
+                                ->setMessageOpenFormat('<div%s><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>')
+                                ->setMessageSeparatorString('<br />')
+                                ->setMessageCloseString('</div>'); ?>
+                            <?php echo $flash->render('error', array('alert', 'alert-dismissable', 'alert-danger')); ?>
+                            <?php echo $flash->render('info', array('alert', 'alert-dismissable', 'alert-info')); ?>
+                            <?php echo $flash->render('default', array('alert', 'alert-dismissable', 'alert-warning')); ?>
+                            <?php echo $flash->render('success', array('alert', 'alert-dismissable', 'alert-success')); ?>
+                        
+                        <?php echo $this->content; ?>
+                        </div>
+                    </div>
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </main>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="col-md-12 footer">
+                            <?php echo $this->translate('Lets note each and every Moment of our life'); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html> 

@@ -1,0 +1,37 @@
+<?php 
+$form = $this->form;
+$form->prepare();
+echo $this->form()->openTag($form); ?> 
+
+<div class="control-group">
+	<?php echo $this->formLabel($form->get('location')); ?>
+	<div class="controls">
+		<?php echo $this->formElement($form->get('location')); ?>
+		<?php echo $this->formElementErrors($form->get('location')); ?>
+	</div>
+</div>
+
+<div class="control-group">
+	<?php echo $this->formLabel($form->get('gender')); ?>
+	<div class="controls">
+		<?php echo $this->formElement($form->get('gender')); ?>
+		<?php echo $this->formElementErrors($form->get('gender')); ?>
+	</div>
+</div>
+
+<div class="control-group">
+	<?php echo $this->formLabel($form->get('avatar')); ?>
+	<div class="controls">
+		<?php echo $this->formElement($form->get('avatar')); ?>
+		<?php echo $this->formElementErrors($form->get('avatar')); ?>
+	</div>
+</div>
+
+<div class="control-group">
+	<div class="controls">
+		<?php echo $this->formElement($form->get('info')); ?>
+		<?php echo $this->formElement($form->get('csrf')); ?>
+	</div>
+</div>
+
+<?php echo $this->form()->closeTag(); ?>
