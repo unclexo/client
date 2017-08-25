@@ -43,6 +43,10 @@ project. It should look something like below:
 </VirtualHost>
 ```
 
+What more needs to be done
+--------------------------
+You must set up another repo as you Server API named <a href="https://github.com/unclexo/server">server</a> to make **client** repo work correctly. So please <a href="https://github.com/unclexo/server">go over there</a> and set up things as said there.
+
 License
 -------
 
