@@ -7,12 +7,20 @@ Client API
 Installation
 ------------
 
-### Using composer:
-
-To create a new poject for **client** use `composer` to install dependencies using the `create-project` command:
+Download the repo to some directory and run `composer` as follows:
 
 ```bash
-$ composer create-project unclexo/client
+cd path/to/project/dir
+php composer.phar install
+```
+
+Alternately, clone the repository and run `composer` as follows:
+
+```bash
+cd path/to/project/dir
+git clone git://github.com/unclexo/client.git
+cd client
+php composer.phar install
 ```
 
 Web Server Setup
