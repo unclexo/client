@@ -43,6 +43,13 @@ project. It should look something like below:
 </VirtualHost>
 ```
 
+Uploads & Logs Directory
+------------------------
+
+Make sure this `data/uploads` directory is **writable**.
+
+Make sure files in this `data/logs` directory are **writable**.
+
 What More Needs to Be Done
 --------------------------
 
