@@ -28,28 +28,19 @@ Web Server Setup
 
 ### Apache Setup
 
-**client** expects server name as `server.dev`.
-
 To setup apache, setup a virtual host to point to the public/ directory of the
 project. It should look something like below:
 
 ```
 <VirtualHost *:80>
-  ServerName server.dev
-  DocumentRoot /path/to/server/public
-  <Directory /path/to/server/public>
+  ServerName client.dev
+  DocumentRoot /path/to/client/public
+  <Directory /path/to/client/public>
     DirectoryIndex index.php
     AllowOverride All
     Require all granted
   </Directory>
 </VirtualHost>
-```
-
-If you do not set up the `ServerName` to `server.dev` while creating virtual host, you have to change your preferred server name only in two places in two files. So please search for `server.dev` in the following files and replace them with your own one:
-
-```
-module/Common/src/Common/Client/ApiClient.php
-module/User/src/User/Entity/UserEntity.php
 ```
 
 License
