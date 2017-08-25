@@ -51,6 +51,6 @@ return array(
 		),
 	),
     'upload_config' => array(
-        'upload_path' => 'data/tmp',
+        'upload_path' => 'data/uploads',
     ),	
 );
