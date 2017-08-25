@@ -2,7 +2,7 @@ Client API
 ----------
 **client** is a web application which designed to directly work with API. This works as a data consumer. It consumes data from your API. So this would be your own website which works as a Client of your API. Using Password or Client Credentials grant, **client** application sends a POST request for user authentication to the API with username and password values. 
 
-**Caution:** This only works with this repo <a href="https://github.com/unclexo/server">server</a> which would be your Server API for resources. So this must be ready too!
+**Caution:** This only works with this repo <a href="https://github.com/unclexo/server">server</a> which would be your Server API for resources. To get a complete applicatoin this needs to be set up too.
 
 Installation
 ------------
@@ -43,9 +43,10 @@ project. It should look something like below:
 </VirtualHost>
 ```
 
-What more needs to be done
+What More Needs to Be Done
 --------------------------
-You must set up another repo as you Server API named <a href="https://github.com/unclexo/server">server</a> to make **client** repo work correctly. So please <a href="https://github.com/unclexo/server">go over there</a> and set up things as said there.
+
+You must set up another repo as your Server API named <a href="https://github.com/unclexo/server">server</a> to make **client** repo work correctly. So please <a href="https://github.com/unclexo/server">go over there</a> and set up things as said there.
 
 License
 -------
