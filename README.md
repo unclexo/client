@@ -7,19 +7,19 @@ Client API
 Installation
 ------------
 
-Download the repo to some directory and run `composer` as follows:
-
-```bash
-cd path/to/project/dir
-php composer.phar install
-```
-
-Alternately, clone the repository and run `composer` as follows:
+Just clone the repository and run `composer` as follows:
 
 ```bash
 cd path/to/project/dir
 git clone git://github.com/unclexo/client.git
 cd client
+php composer.phar install
+```
+
+Alternately, download the repo to some directory and run `composer` as follows:
+
+```bash
+cd path/to/project/dir
 php composer.phar install
 ```
 
@@ -48,8 +48,8 @@ project. It should look something like below:
 If you do not set up the `ServerName` to `server.dev` while creating virtual host, you have to change your preferred server name only in two places in two files. So please search for `server.dev` in the following files and replace them with your own one:
 
 ```
-  module/Common/src/Common/Client/ApiClient.php
-  module/User/src/User/Entity/UserEntity.php
+module/Common/src/Common/Client/ApiClient.php
+module/User/src/User/Entity/UserEntity.php
 ```
 
 License
